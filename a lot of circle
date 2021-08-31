@@ -9,8 +9,6 @@ setpos(0, -50)
 down()
 width(2)
 
-
-from random import random
 for i in range(50):
     color('gold')
     circle(115)
