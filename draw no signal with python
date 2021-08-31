@@ -1,0 +1,19 @@
+# in terminal (pip install turtle) and (pip install random) 
+
+from turtle import *
+Screen().bgcolor('black')
+speed(0)
+up()
+setpos(-250, -50)
+down()
+width(2)
+val = 500
+
+from random import random
+while True:
+    color(random(),random(),random())
+    fd(val)
+    left(90)
+    fd(150)
+    left(90)
+    val -= 3
