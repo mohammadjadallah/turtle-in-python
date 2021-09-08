@@ -1,0 +1,46 @@
+# pip install turtle 
+
+from turtle import *
+
+Screen().setup(1300, 500)
+Screen().bgcolor('green') #dark red
+Screen().tracer(0)                         # To run turtle graphics and control in delay
+speed(0)
+#width(2)      does not matter
+#hideturtle()      does not matter
+
+# function to make a shape 
+
+def mv():
+    color('orange') # blue
+    begin_fill()
+    circle(100)
+    end_fill()
+
+
+up()
+goto(-600, 0)
+down()
+
+# Here we made nested loops (infinite loop) and each loop repeats else loop
+
+i = 0
+while True:
+    while True:
+        clear()
+        mv()
+        Screen().update()
+        fd(0.5)
+        i += 1
+        if i == 2200:
+            up()
+            goto(600, 0)
+            down()
+            while True:
+                clear()      #  to remove the shape to each once
+                mv()
+                Screen().update()  # to reload the screen to each once. And without it the program will become(Not responding)
+                backward(0.5)
+                i -= 1
+                if i == 0:
+                    break
