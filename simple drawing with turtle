@@ -1,0 +1,30 @@
+# pip install turtle 
+
+import turtle
+turtle.bgcolor('black')
+turtle.speed(0)
+def Circle(trest):
+    turtle.goto(8, -60)
+    turtle.width(4)
+    turtle.color("#F79489")
+    turtle.circle(150)
+    turtle.right(95)
+    turtle.left(10)
+
+def insideCircle(trest, Color):
+    turtle.width(2)
+    turtle.color(Color)
+    turtle.left(360/2)
+    turtle.forward(300)
+    turtle.left(10)
+
+def main():
+	myWin = turtle.Screen()     		#The graphics window
+	tristan = turtle.Turtle()
+	Circle(tristan)
+	for i in range(20):
+		insideCircle(tristan,"#F79489")
+		insideCircle(tristan,"#F8AFA6")
+	myWin.exitonclick()         		#Close the window when clicked
+main()
+turtle.mainloop()
