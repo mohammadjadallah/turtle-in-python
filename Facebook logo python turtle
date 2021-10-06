@@ -1,0 +1,68 @@
+# Create Facebook logo with python turtle 
+# pip install turtle 
+
+#import library turtle
+
+from turtle import *
+
+up()
+setpos(-100, -100)
+down()
+width(4)
+speed(0)
+color('#0982ed')
+begin_fill()
+
+# Draw rounded square
+
+for i in range(4):
+    fd(200)
+    circle(30, 90)
+end_fill()
+fd(120)
+color('white')
+begin_fill()
+
+# Draw char --> f
+
+for i in range(3):
+    left(90)
+    fd(100)
+    left(90)
+    fd(40)
+
+color('white')
+fd(50)
+left(90)
+bk(30)
+left(90)
+fd(50)
+left(90)
+fd(60)
+circle(-40, 100)
+fd(20)
+right(80)
+fd(30)
+left(90)
+bk(30)
+left(90)
+bk(65)
+right(90)
+fd(50)
+left(90)
+bk(30)
+left(90)
+fd(50)
+end_fill()
+
+hideturtle()
+mainloop()
+
+
+
+
+
+
+
+
+
