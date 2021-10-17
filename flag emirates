@@ -1,0 +1,45 @@
+# How to draw flag emirates
+
+
+from turtle import *
+Screen().setup(1000, 600)
+bgpic('5emirates.png')
+col = ('black', 'white', 'green', 'red')
+speed(0)
+
+
+for i in range(3):
+    color(col[i])
+    begin_fill()
+    for j in range(2):
+        fd(400)
+        left(90)
+        fd(80)
+        left(90)
+    end_fill()
+    left(90)
+    fd(80)
+    left(-90)
+
+
+color(col[3])
+begin_fill()
+penup()
+goto(0, 0)
+pendown()
+for c in range(2):
+    forward(100)
+    left(90)
+    forward(240)
+    left(90)
+
+end_fill()
+
+color('white')
+penup()
+write("❤الإمارات _ في _ القلب#" ,setpos(5, -100), font = ("normal",40,'bold'))
+color('red')
+write("❤" ,setpos(5, -100), font = ("Calibri",40,'bold'))
+color("gray")
+
+mainloop()
