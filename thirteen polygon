@@ -1,0 +1,20 @@
+#Draw the thirteen polygon repeatedly and spiral them into an awesome shape
+# pip install turtle
+
+from turtle import *
+pen()
+bgcolor(0, 0, 0)
+speed(0)
+width(3)
+setpos(0, -10)
+color('white')
+
+numberSides = 13
+numberIteration = 20
+
+for x in range(0, numberIteration):
+    for i in range(0, numberSides):
+        fd(50)
+        left(360 / numberSides)
+    left(360 / numberIteration)
+done()
